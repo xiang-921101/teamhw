@@ -1,0 +1,33 @@
+<footer>
+    <div class="footer-container">
+        <!-- Left Section with Logo and Email Subscription -->
+        <div class="footer-left">
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Future Wear Logo">
+                </a>
+            </div>
+            <div class="footer-email">
+                <p>Exclusive offers and first access to products</p>
+                <form>
+                    <input type="email" placeholder="E-mail" required>
+                    <button type="submit">→</button>
+                </form>
+                <p>Your Privacy Policy warning text here.</p>
+            </div>
+        </div>
+
+        <!-- Right Section with Updated Navigation Links -->
+        <div class="footer-right">
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <a href="#new-in">New In</a>
+                <a href="#women">Women</a>
+                <a href="#men">Men</a>
+                <a href="#categories">Categories</a>
+                <a href="#cart">Cart</a>
+                <a href="#reservation">Reservation</a>
+            </div>
+        </div>
+    </div>
+</footer>
