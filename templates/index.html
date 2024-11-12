@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Future Wear{% endblock %}
+
+{% block content %}
+<!-- Banner Section -->
+<section id="banner">
+    <div class="banner-left">
+        <h1 class="title">FutureWear : <br> Fashion Forward, Planet Friendly</h1>
+        <p class="subtitle">Selling second-hand clothes to meet sustainable goals</p>
+        <div class="banner-buttons">
+            <a href="#" class="button shop-button">Shop Now</a>
+            <a href="#" class="button cart-button">Cart</a>
+        </div>
+    </div>
+    <div class="banner-right"></div>
+</section>
+
+<!-- Categories Section -->
+<section id="categories">
+    <h2 class="section-title">Categories</h2>
+    <div class="categories">
+        <div class="category">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/women-outfit-01.jpg') }}" alt="Women Category">
+                <div class="overlay">
+                    <p class="category-description">Women</p>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/men-outfit-02.jpg') }}" alt="Men Category">
+                <div class="overlay">
+                    <p class="category-description">Men</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Arrivals Section -->
+<section id="new-in">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/women-outfit-04.jpg') }}" alt="Women Outfit 4">
+            </div>
+            <p class="item-name">Item Name 1</p>
+            <p class="item-price">350 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/men-outfit-04.jpg') }}" alt="Men Outfit 4">
+            </div>
+            <p class="item-name">Item Name 2</p>
+            <p class="item-price">450 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+    </div>
+</section>
+
+<section id="men">
+    <h2 class="section-title">Men</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/men-outfit-01.jpg') }}" alt="Men Outfit 1">
+            </div>
+            <p class="item-name">Men Outfit 1</p>
+            <p class="item-price">200 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/men-outfit-02.jpg') }}" alt="Men Outfit 2">
+            </div>
+            <p class="item-name">Men Outfit 2</p>
+            <p class="item-price">300 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/men-outfit-03.jpg') }}" alt="Men Outfit 3">
+            </div>
+            <p class="item-name">Men Outfit 3</p>
+            <p class="item-price">560 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/men-outfit-04.jpg') }}" alt="Men Outfit 4">
+            </div>
+            <p class="item-name">Men Outfit 4</p>
+            <p class="item-price">450 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+    </div>
+</section>
+
+<section id="women">
+    <h2 class="section-title">Women</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/women-outfit-01.jpg') }}" alt="Women Outfit 1">
+            </div>
+            <p class="item-name">Women Outfit 1</p>
+            <p class="item-price">399 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/women-outfit-02.jpg') }}" alt="Women Outfit 2">
+            </div>
+            <p class="item-name">Women Outfit 2</p>
+            <p class="item-price">480 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/women-outfit-03.jpg') }}" alt="Women Outfit 3">
+            </div>
+            <p class="item-name">Women Outfit 3</p>
+            <p class="item-price">300 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+        <div class="product-card">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/women-outfit-04.jpg') }}" alt="Women Outfit 4">
+            </div>
+            <p class="item-name">Women Outfit 4</p>
+            <p class="item-price">350 NTD</p>
+            <div class="color-options">
+                <span class="color-circle black"></span>
+                <span class="color-circle beige"></span>
+            </div>
+            <a href="#" class="button shop-button">Shop</a>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
