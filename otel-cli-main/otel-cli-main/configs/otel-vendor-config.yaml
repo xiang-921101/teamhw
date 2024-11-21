@@ -1,0 +1,53 @@
+# opentelemetry-collector is a proxy for telemetry events.
+#
+# This configuration is set up for use in otel-cli development.
+# With collector in debug mode every trace is printed to the console
+# which makes working on otel-cli quick & easy. There are also
+# examples below for how to send to Lightstep and Honeycomb.
+
+receivers:
+  otlp:
+    protocols:
+      # OTLP over gRPC
+      grpc:
+        endpoint: "0.0.0.0:4317"
+      # OTLP over HTTP (opentelemetry-ruby only works on this proto for now)
+      http:
+        endpoint: "0.0.0.0:55681"
+
+processors:
+  batch:
+
+exporters:
+  # set to detailed and your traces will get printed to the console spammily
+  debug:
+    verbosity: detailed
+  # Lightstep: set & export LIGHTSTEP_TOKEN and enable below
+  otlp/1:
+    endpoint: "ingest.lightstep.com:443"
+    headers:
+      "lightstep-access-token": "${LIGHTSTEP_TOKEN}"
+  # Honeycomb: set & export HONEYCOMB_TEAM to the auth token
+  # You may also want to set HONEYCOMB_DATASET for legacy accounts.
+  otlp/2:
+    endpoint: "api.honeycomb.io:443"
+    headers:
+      "x-honeycomb-team": "${HONEYCOMB_TEAM}"
+  # Elastic: set & export the ELASTIC_TOKEN to the auth token for the APM server.
+  otlp/3:
+    endpoint: "xxx.elastic-cloud.com:443"
+    headers:
+        Authorization: "Bearer ${ELASTIC_TOKEN}"
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      # only enable debug by default
+      exporters: [debug]
+      # Lightstep:
+      # exporters: [debug, otlp/1]
+      # Honeycomb:
+      # exporters: [debug, otlp/2]
+      # Elastic:
+      # exporters: [debug, otlp/3]
