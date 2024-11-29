@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Men's Collection - Future Wear{% endblock %}
+
+{% block content %}
+    <!-- Men's Page Section -->
+    <div class="page">
+        <!-- Banner Section -->
+        <div class="backgroundimage">
+            <h1 class="backgroundtitle">秋冬最新商品</h1>
+            <p class="backgroundtext">Explore the latest fall and winter collection now!</p>
+            <button class="manbuybutton">Shop Now</button>
+        </div>
+
+        <!-- New Arrivals Section -->
+        <div class="mannewcontainer">
+            <h2 class="mannewtitle">男装最新</h2>
+            <div class="button-group">
+                <button class="button-group-item">Featured</button>
+                <button class="button-group-item">New Arrivals</button>
+            </div>
+            <!-- Products -->
+            <div class="product-container">
+                <div class="newcontainer">
+                    <img src="{{ url_for('static', filename='images/men-outfit-01.jpg') }}" alt="Jacket Alpha" class="newimage">
+                    <h3 class="newtext">Jacket Alpha</h3>
+                    <div class="textbox">
+                        <input type="text" value="free size">
+                    </div>
+                    <p class="newprice">NTS 1000</p>
+                    <button class="cartbutton">Add</button>
+                </div>
+                <div class="newcontainer">
+                    <img src="{{ url_for('static', filename='images/men-outfit-02.jpg') }}" alt="Sweater Beta" class="newimage">
+                    <h3 class="newtext">Sweater Beta</h3>
+                    <div class="textbox">
+                        <input type="text" value="S">
+                    </div>
+                    <p class="newprice">NTS 1200</p>
+                    <button class="cartbutton">Add</button>
+                </div>
+                <div class="newcontainer">
+                    <img src="{{ url_for('static', filename='images/men-outfit-03.jpg') }}" alt="Hoodie Gamma" class="newimage">
+                    <h3 class="newtext">Hoodie Gamma</h3>
+                    <div class="textbox">
+                        <input type="text" value="M">
+                    </div>
+                    <p class="newprice">NTS 1400</p>
+                    <button class="cartbutton">Add</button>
+                </div>
+                <div class="newcontainer">
+                    <img src="{{ url_for('static', filename='images/men-outfit-04.jpg') }}" alt="Coat Delta" class="newimage">
+                    <h3 class="newtext">Coat Delta</h3>
+                    <div class="textbox">
+                        <input type="text" value="L">
+                    </div>
+                    <p class="newprice">NTS 1600</p>
+                    <button class="cartbutton">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Products Section -->
+        <div class="otherscontainer">
+            <div class="othersitem">
+                <img class="othersimage" src="{{ url_for('static', filename='images/shirt.jpeg') }}"alt="Upperwear Image">
+                <div class="otherstitle">上衣</div>
+                <div class="otherstextdesc">长袖・短袖・衬衫・毛衣</div>
+                <button class="othersbutton">查看更多</button>
+            </div>
+            <div class="othersitem">
+                <img class="othersimage" src="{{ url_for('static', filename='images/short.jpeg') }}" alt="Pants Image">
+                <div class="otherstitle">下着</div>
+                <div class="otherstextdesc">长裤・短裤・牛仔裤・西装裤</div>
+                <button class="othersbutton">查看更多</button>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}
