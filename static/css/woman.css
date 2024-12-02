@@ -1,0 +1,282 @@
+/* Banner Section */
+/* Banner Section */
+.woman-banner {
+    position: relative;
+    width: 100%;
+    height: 552px;
+    background: url("../images/woman-background.jpeg") no-repeat center top; /* Adjusted position to show the head */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 50px; /* Add padding to give space from the left edge */
+    box-sizing: border-box;
+}
+
+.woman-banner-content {
+    max-width: 479px; /* Matches the width of the content box */
+    text-align: left;
+    color: #323842;
+}
+
+.woman-banner-title {
+    font-family: Archivo, sans-serif;
+    font-size: 62px;
+    line-height: 82px;
+    font-weight: 800;
+    margin: 0 0 30px;
+    color: #323842;
+}
+
+.woman-banner-text {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0 0 30px;
+    color: #323842;
+}
+
+.woman-banner-buy-button {
+    width: 178px;
+    height: 52px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #E8639E; /* Pink button for woman section */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover and Active States */
+.woman-banner-buy-button:hover {
+    background: #E84C8A;
+}
+
+.woman-banner-buy-button:active {
+    background: #E03570;
+}
+
+
+/* New Arrivals Section */
+.womannewcontainer {
+    width: 100%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.womannewtitle {
+    font-family: "Archivo", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #323842;
+    margin-bottom: 20px;
+}
+
+.woman-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.woman-button-group-item {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 1px solid #E8639E;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: #E8639E;
+    cursor: pointer;
+}
+
+.woman-button-group-item:hover {
+    background-color: #FDE6EE;
+}
+
+.woman-product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.woman-newcontainer {
+    width: 276px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.woman-newimage {
+    width: 100%;
+    height: 334px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.woman-newtext {
+    font-family: "Archivo", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #171A1F;
+    margin-bottom: 10px;
+}
+
+.woman-textbox input {
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    border: 1px solid #BCC1CA;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.woman-textbox input:hover {
+    border-color: #A7ADB7;
+}
+
+.woman-newprice {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #323842;
+    margin-bottom: 10px;
+}
+
+.woman-cartbutton {
+    width: 100%;
+    height: 44px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #E8639E;
+    background-color: #FFFFFF;
+    border: 1px solid #E8639E;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.woman-cartbutton:hover {
+    background-color: #FDE6EE;
+}
+
+/* Other Items Section */
+.woman-other-container {
+    width: 1176px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.woman-other-title {
+    font-family: Archivo, sans-serif;
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #323842;
+}
+
+.woman-other-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.woman-other-item-container {
+    flex: 1;
+    max-width: 570px;
+    height: 338px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.woman-other-item-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.woman-other-item-text-container {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    text-align: left;
+}
+
+.woman-other-item-text {
+    font-family: Archivo, sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 800;
+    color: #323842;
+    margin-bottom: 10px;
+}
+
+.woman-other-item-subtext {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #323842;
+    margin-bottom: 20px;
+}
+
+.woman-other-item-button {
+    width: 131px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #E8639E;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.woman-other-item-button:hover {
+    background: #E84C8A;
+}
+
+.woman-other-item-button:active {
+    background: #E03570;
+}
+
+.woman-other-item-button:disabled {
+    opacity: 0.4;
+}

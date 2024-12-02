@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}Shopping Cart - Future Wear{% endblock %}
+
+{% block content %}
+
+<!-- Shopping Cart Page Section -->
+<div class="page">
+    <div class="content">
+        <!-- Cart Title Section -->
+        <div class="cart-title">購物車</div>
+
+        <!-- Cart and Recommendation Container -->
+        <div class="cart-and-recommendations">
+            <!-- Cart Container with Three Items -->
+            <div class="cart-group-1">
+                <!-- Cart Item 1 -->
+                <div class="cart-rectangle-1">
+                    <img src="{{ url_for('static', filename='images/pic-1.jpeg') }}" alt="Item 1" class="cart-image-1">
+                    <div class="cart-text-1">商品名稱</div>
+                    <div class="cart-textbox-size-1">
+                        <input type="text" value="free size">
+                    </div>
+                    <div class="cart-price-1">NT$價格</div>
+                    <button class="cart-del-button-1">X</button>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-rectangle-1">
+                    <img src="{{ url_for('static', filename='images/pic-2.jpeg') }}" alt="Item 2" class="cart-image-1">
+                    <div class="cart-text-1">商品名稱</div>
+                    <div class="cart-textbox-size-1">
+                        <input type="text" value="L">
+                    </div>
+                    <div class="cart-price-1">NT$價格</div>
+                    <button class="cart-del-button-1">X</button>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-rectangle-1">
+                    <img src="{{ url_for('static', filename='images/pic-3.jpeg') }}" alt="Item 3" class="cart-image-1">
+                    <div class="cart-text-1">商品名稱</div>
+                    <div class="cart-textbox-size-1">
+                        <input type="text" value="S">
+                    </div>
+                    <div class="cart-price-1">NT$價格</div>
+                    <button class="cart-del-button-1">X</button>
+                </div>
+
+                <!-- Total Summary Section -->
+                <div class="cart-total-rectangle">
+                    <div class="cart-total-title">小計明細</div>
+                    <div class="cart-total-row">
+                        <span>商品金額</span>
+                        <span>NT$金額</span>
+                    </div>
+                    <div class="line"></div> <!-- Line Divider -->
+                    <div class="cart-total-row">
+                        <span>小計</span>
+                        <span class="cart-total-final-price">NT$金額</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations Section -->
+            <div class="cart-rec-rectangle">
+                <div class="cart-rec-text">為您推薦 <span class="crown-icon">👑</span></div>
+
+                <!-- Recommendation Item 1 -->
+                <div class="rec-item">
+                    <img src="{{ url_for('static', filename='images/pic-4.jpeg') }}" alt="Recommendation 1" class="cart-rec-image-1">
+                    <div class="cart-size-textbox-rec">
+                        <input type="text" value="M">
+                    </div>
+                    <div class="rec-item-details">
+                        <span class="rec-item-price">NT$價格</span>
+                        <button class="rec-item-button">
+                            <span class="cart-icon">🛒</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recommendation Item 2 -->
+                <div class="rec-item">
+                    <img src="{{ url_for('static', filename='images/pic-5.jpeg') }}" alt="Recommendation 2" class="cart-rec-image-1">
+                    <div class="cart-size-textbox-rec">
+                        <input type="text" value="S">
+                    </div>
+                    <div class="rec-item-details">
+                        <span class="rec-item-price">NT$價格</span>
+                        <button class="rec-item-button">
+                            <span class="cart-icon">🛒</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recommendation Item 3 -->
+                <div class="rec-item">
+                    <img src="{{ url_for('static', filename='images/pic-1.jpeg') }}" alt="Recommendation 3" class="cart-rec-image-1">
+                    <div class="cart-size-textbox-rec">
+                        <input type="text" value="L">
+                    </div>
+                    <div class="rec-item-details">
+                        <span class="rec-item-price">NT$價格</span>
+                        <button class="rec-item-button">
+                            <span class="cart-icon">🛒</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Payment Button Section -->
+                <div class="payment-button-wrapper">
+                    <button class="button">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
