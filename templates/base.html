@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Future Wear{% endblock %}</title>
-    <!-- Global Stylesheet -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Header Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
     {% block head %}{% endblock %}
 </head>
 <body>
+    <!-- Index Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <!-- Men's Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/man.css') }}">
+    <!-- Women's Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/woman.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cart.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/order_summary.css') }}">
     <!-- Header -->
     {% include 'header.html' %}
 

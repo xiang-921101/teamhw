@@ -1,21 +1,29 @@
 <header>
-    <div class="header-container">
-        <div class="left-section">
-            <div class="logo">
-                <a href="/">
-                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Future Wear Logo">
-                </a>
-            </div>
-            <nav class="navbar">
-                <a href="#new in">New in</a>
-                <a href="#women">Women</a>
-                <a href="#men">Men</a>
-                <a href="#Category">Categories</a>
-            </nav>
-        </div>
-        <div class="header-buttons">
-            <a href="#cart" class="button">Cart – 0</a>
-            <a href="#reservation" class="button">Reservation</a>
-        </div>
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="header-logo">
+
+    <!-- Navigation Menu -->
+    <nav class="header-menu">
+        <div class="header-menu-item selected">首頁</div>
+        <div class="header-menu-item">新品上市</div>
+        <div class="header-menu-item">男裝</div>
+        <div class="header-menu-item">女裝</div>
+        <div class="header-menu-item">類別</div>
+    </nav>
+
+    <!-- Buttons -->
+    <div class="header-buttons">
+        <button class="header-button">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M7 18c-1.104 0-2 .897-2 2s.896 2 2 2 2-.897 2-2-.896-2-2-2zm10 0c-1.104 0-2 .897-2 2s.896 2 2 2 2-.897 2-2-.896-2-2-2zm-1.333-4l1.334-7h-11l1.333 7h8.333z"/>
+            </svg>
+            購物車
+        </button>
+        <button class="header-button">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 3h-14c-1.104 0-2 .897-2 2v14c0 1.104.896 2 2 2h14c1.104 0 2-.897 2-2v-14c0-1.103-.896-2-2-2zm-7 16h-4v-6h4v6zm0-8h-4v-6h4v6zm6 8h-4v-10h4v10z"/>
+            </svg>
+            訂單明細
+        </button>
     </div>
 </header>
