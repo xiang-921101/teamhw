@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Order Summary - Future Wear{% endblock %}
+
+{% block content %}
+
+<!-- Order Summary Page Section -->
+<div class="order-summary-page">
+    <div class="content">
+        <!-- Order Summary Title -->
+        <div class="order-title">訂單列表</div>
+
+        <!-- Order Information -->
+        <div class="order-info">
+            <span>配送方式：宅配</span> &nbsp; | &nbsp;
+            <span>付款方式：信用卡</span> &nbsp; | &nbsp;
+            <span>訂單日期：2024/11/25 20:04</span>
+            <div>訂單號碼：TW241124WC1201</div>
+            <div>訂單總額：NT$ (含運費)</div>
+        </div>
+
+        <!-- Cart Group Container for Items in the Order -->
+        <div class="cart-group-1">
+            <!-- Cart Item 1 -->
+            <div class="cart-rectangle-1">
+                <img src="{{ url_for('static', filename='images/pic-1.jpeg') }}" alt="Item 1" class="cart-image-1">
+                <div class="cart-text-1">商品名稱</div>
+                <div class="cart-textbox-size-1">
+                    <input type="text" value="free size" disabled>
+                </div>
+                <div class="cart-price-1 red-price">NT$價格</div>
+                <div class="order-sequence">序號：001</div>
+            </div>
+
+            <!-- Cart Item 2 -->
+            <div class="cart-rectangle-1">
+                <img src="{{ url_for('static', filename='images/pic-2.jpeg') }}" alt="Item 2" class="cart-image-1">
+                <div class="cart-text-1">商品名稱</div>
+                <div class="cart-textbox-size-1">
+                    <input type="text" value="S" disabled>
+                </div>
+                <div class="cart-price-1 red-price">NT$價格</div>
+                <div class="order-sequence">序號：002</div>
+            </div>
+
+            <!-- Cart Item 3 -->
+            <div class="cart-rectangle-1">
+                <img src="{{ url_for('static', filename='images/pic-3.jpeg') }}" alt="Item 3" class="cart-image-1">
+                <div class="cart-text-1">商品名稱</div>
+                <div class="cart-textbox-size-1">
+                    <input type="text" value="L" disabled>
+                </div>
+                <div class="cart-price-1 red-price">NT$價格</div>
+                <div class="order-sequence">序號：003</div>
+            </div>
+        </div>
+
+        <!-- Customer Information -->
+        <div class="customer-info">
+            <div>收件人：OOO</div>
+            <div>配送地址：OOO</div>
+            <div>聯絡電話：09XXXXXXXX</div>
+            <div class="total-items">總件數：3</div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
