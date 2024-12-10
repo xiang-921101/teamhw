@@ -1,0 +1,535 @@
+/* General Adjustments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #171A1FFF;
+}
+
+/* Banner Container */
+.index-banner-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and logo */
+    align-items: center; /* Vertically align items */
+    padding: 40px 5%;
+    max-width: 1440px;
+    height: 619 px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FFFFFF00 0%, #FFFFFFFF 100%);
+}
+
+/* Left Content */
+    .banner-left {
+        flex: 1; /* Take up available space */
+        max-width: 50%; /* Ensure text doesn't overflow */
+        align-content:end;
+    }
+
+    .index-title-text {
+        font-family: 'Archivo', sans-serif;
+        font-size: 64px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #171A1FFF;
+        margin-bottom: 16px;
+    }
+
+    .index-tagline-text {
+        font-family: 'Archivo', sans-serif;
+        font-size: 48px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #565E6CFF;
+        margin-bottom: 16px;
+    }
+
+    .index-sentence-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #565E6CFF;
+        margin-bottom: 32px;
+    }
+
+/* Buttons */
+    .banner-buttons {
+        display: flex;
+        gap: 16px;
+    }
+
+    .index-shop-button,
+    .index-cart-button {
+        padding: 12px 24px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .index-shop-button {
+        background-color: #22CCB2FF;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .index-shop-button:hover {
+        background-color: #1FB7A0FF;
+    }
+
+    .index-cart-button {
+        background-color: #FFFFFF;
+        color: #22CCB2FF;
+        border: 1px solid #22CCB2FF;
+    }
+
+    .index-cart-button:hover {
+        color: #1FB7A0FF;
+        border-color: #1FB7A0FF;
+    }
+
+/* Right Content */
+    .banner-right {
+        flex: 0 0 auto; /* Fixed size for the logo container */
+        max-width: 50%; /* Ensure logo doesn't take up too much space */
+        align-content: start; /* Align logo to the right */
+    }
+
+    .index-logo {
+        max-width: 100%;
+        height: 619 px;
+        border-radius:0;
+    }
+
+/* Categories Section */
+.index-category-container {
+    position: relative; 
+    padding: 60px 5%;
+    width: 100%; 
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #FFFFFF; /* White background */
+    border-radius: 6px; /* Border radius */
+    text-align: center;
+}
+
+/* Categories Title */
+.index-category-title {
+    font-size: 48px;
+    line-height: 84px; 
+    font-weight: 700; 
+    color: #171A1FFF; /* Dark grey color */
+    margin-bottom: 32px;
+}
+
+/* Categories Wrapper */
+.index-categories {
+    display: flex;
+    justify-content: space-around; /* Center categories with space between */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Category Container */
+.category-item {
+    position: relative;
+    width: 441px; 
+    height: 600px; 
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Woman Category */
+.index-category-woman {
+    position: relative;
+}
+
+.index-category-woman-image {
+    width: 441px; 
+    height: 600px; 
+    object-fit: cover; /* Maintain aspect ratio while covering */
+    border-radius: 6px;
+}
+
+/* Woman Category Text */
+.index-category-woman-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Archivo', sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #FFFFFF; /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* Add subtle overlay behind text */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Man Category */
+.index-category-man {
+    position: relative;
+}
+
+.index-category-man-image {
+    width: 441px; 
+    height: 600px; 
+    object-fit: cover; /* Maintain aspect ratio while covering */
+    border-radius: 6px;
+}
+
+/* Man Category Text */
+.index-category-man-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Archivo', sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #FFFFFF; /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* Add subtle overlay behind text */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Container for New Arrivals Section */
+.index-new-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Section Title */
+.index-new-title {
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #171A1F;
+    margin-bottom: 40px;
+}
+
+/* Flexbox for Items */
+.index-new-items {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Item Containers */
+.index-new-item-container-1,
+.index-new-item-container-2 {
+    position: relative;
+    width: 328px;
+    background: #DEE1E6;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Image and Label */
+.index-new-item-content {
+    position: relative;
+    width: 100%;
+}
+
+.index-new-item-image-1,
+.index-new-item-image-2 {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.index-new-item-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF5E5E;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Titles and Prices */
+.index-new-item-title-1,
+.index-new-item-title-2 {
+    font-family: Archivo, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #171A1F;
+    margin: 20px 0 10px;
+}
+
+.index-new-item-price-1,
+.index-new-item-price-2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #171A1F;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.index-new-buy-button-1,
+.index-new-item-button-2 {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #636AE8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover and Active States */
+.index-new-buy-button-1:hover,
+.index-new-item-button-2:hover {
+    background: #4850E4;
+}
+
+.index-new-buy-button-1:active,
+.index-new-item-button-2:active {
+    background: #2C35E0;
+}
+
+/* Men's Section Container */
+.index-man-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Section Title */
+.index-man-title {
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #171A1F;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Items */
+.index-man-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px; /* Adjust spacing between items */
+    justify-content: center;
+}
+
+/* Individual Item Container */
+.index-man-item-container {
+    position: relative;
+    background: #C3E1F8;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image and Label */
+.index-man-item-content {
+    position: relative;
+    width: 100%;
+}
+
+.index-man-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.index-man-item-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF5E5E;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Titles and Prices */
+.index-man-item-title {
+    font-family: Archivo, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #171A1F;
+    margin: 20px 0 10px;
+}
+
+.index-man-item-price {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #171A1F;
+    margin-bottom: 20px;
+}
+
+/* Buy Button */
+.index-man-item-buy-button {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #636AE8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover and Active States */
+.index-man-item-buy-button:hover {
+    background: #4850E4;
+}
+
+.index-man-item-buy-button:active {
+    background: #2C35E0;
+}
+/* Women's Section Container */
+.index-woman-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Section Title */
+.index-woman-title {
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #171A1F;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Items */
+.index-woman-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Individual Item Container */
+.index-woman-item-container {
+    position: relative;
+    background: #FAE7C0;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image and Label */
+.index-woman-item-content {
+    position: relative;
+    width: 100%;
+}
+
+.index-woman-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.index-woman-item-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF5E5E;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Titles and Prices */
+.index-woman-item-text {
+    font-family: Archivo, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #171A1F;
+    margin: 20px 0 10px;
+}
+
+.index-woman-item-price {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #171A1F;
+    margin-bottom: 20px;
+}
+
+/* Buy Button */
+.index-woman-item-buy-button {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #636AE8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover and Active States */
+.index-woman-item-buy-button:hover {
+    background: #4850E4;
+}
+
+.index-woman-item-buy-button:active {
+    background: #2C35E0;
+}
